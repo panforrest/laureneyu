@@ -42,38 +42,28 @@
 
 				<div class="swiper-container swiper-parent">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide dark" style="background-image: url('images/laurene/VISUAL-ARTS.jpg');">
-                          <!--
+						<div class="swiper-slide dark" style="background-image: url('images/slider/swiper/1.jpg');">
+				            <div class="container clearfix">
+				                <div class="vertical-middle">
+				                    <div class="heading-block center nobottomborder">
+				                        <h1 data-animate="fadeInUp">Laurene Yu</h1>
+				                        <img style="width:144px;border:2px solid #fff; border-radius:72px" src="images/laurene/LaureneYuActing.png" />
+				                        <span style="font-size:24px" data-animate="fadeInUp" data-delay="300">Portfolio Website</span>
+				                    </div>
+				                </div>
+				            </div>
+				        </div>    
+
+			            <div class="swiper-slide" style="background-image: url('images/laurene/VISUAL-ARTS.jpg'); background-position: center top;">
 							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
+								<div class="slider-caption">
 									<h2 data-caption-animate="fadeInUp"></h2>
 									<p data-caption-animate="fadeInUp" data-caption-delay="200"></p>
 								</div>
 							</div>
-                          -->
-
-
-
-            <div class="container clearfix">
-
-                <div class="vertical-middle">
-
-                    <div class="heading-block center nobottomborder">
-                        <h1 data-animate="fadeInUp">Laurene Yu</h1>
-                        <img style="width:144px;border:2px solid #fff; border-radius:72px" src="images/laurene/LaureneYuActing.png" />
-                        <span style="font-size:24px" data-animate="fadeInUp" data-delay="300">Portfolio Website</span>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-
-
-
-
 						</div>
+
+						
 						<div class="swiper-slide dark">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
@@ -353,7 +343,7 @@
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Role 1</h4><span>Film</span></div>
-									<div class="team-content">Role 1 descrtion and date.</div>
+									<div class="team-content">Role 1 description and date.</div>
 									
 								</div>
 							</div>
@@ -368,7 +358,7 @@
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Role 2</h4><span>Television</span></div>
-									<div class="team-content">Role 2 descrtion and date.</div>
+									<div class="team-content">Role 2 description and date.</div>
 									
 								</div>
 							</div>
@@ -385,7 +375,7 @@
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Role 3</h4><span>Theater</span></div>
-									<div class="team-content">Role 3 descrtion and date.</div>
+									<div class="team-content">Role 3 description and date.</div>
 									
 								</div>
 							</div>
@@ -400,7 +390,7 @@
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Role 4</h4><span>Commercial</span></div>
-									<div class="team-content">Role 4 descrtion and date.</div>
+									<div class="team-content">Role 4 description and date.</div>
 									
 									</a>
 								</div>
@@ -727,7 +717,7 @@
                 <div class="container clearfix">
 
                     <div class="col_half">
-                        Copyrights &copy; 2018 All Rights Reserved by Dealp Inc.<br>
+                        Copyrights &copy; 2018 All Rights Reserved by Laurene Yu.<br>
                         <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
                     </div>
 
