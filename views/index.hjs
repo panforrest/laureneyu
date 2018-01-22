@@ -63,7 +63,7 @@
 							</div>
 						</div>
 
-						
+						<!--
 						<div class="swiper-slide dark">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
@@ -73,12 +73,15 @@
 							</div>
 							<div class="video-wrap">
 								<video poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
+                                
 									<source src='images/videos/explore.mp4' type='video/mp4' />
+                                
 									<source src='images/videos/explore.webm' type='video/webm' />
 								</video>
 								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
 							</div>
 						</div>
+						-->
 						<div class="swiper-slide" style="background-image: url('images/laurene/i-am-a-writer.jpg'); background-position: center top;">
 							<div class="container clearfix">
 								<div class="slider-caption">
