@@ -734,51 +734,54 @@
                     -->	
                     <div> 
 
-
+                        <div class="col_half col_last">
+                        Copyrights &copy; 2018 All Rights Reserved by Laurene Yu.<br>
+                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                        </div>
                         
-                        <i class="icon-envelope2"></i> laurene.yu@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> 718-123 4567 <span class="middot">&middot;</span> 
+                        
                         
 
 
 
 
                         <div class="fright clearfix">
-                            <a href="#" class="social-icon si-small si-borderless si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
+                            <a href="#" class="social-icon si-dark si-large si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
 
-                            <a href="#" class="social-icon si-small si-borderless si-twitter">
+                            <a href="#" class="social-icon si-dark si-large si-twitter">
                                 <i class="icon-twitter"></i>
                                 <i class="icon-twitter"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless si-gplus">
+                            <a href="#" class="social-icon si-dark si-large si-gplus">
                                 <i class="icon-gplus"></i>
                                 <i class="icon-gplus"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                            <a href="#" class="social-icon si-dark si-large si-pinterest">
                                 <i class="icon-pinterest"></i>
                                 <i class="icon-pinterest"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless si-vimeo">
+                            <a href="#" class="social-icon si-dark si-large si-vimeo">
                                 <i class="icon-vimeo"></i>
                                 <i class="icon-vimeo"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless si-github">
+                            <a href="#" class="social-icon si-dark si-large si-github">
                                 <i class="icon-github"></i>
                                 <i class="icon-github"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless si-yahoo">
+                            <a href="#" class="social-icon si-dark si-large si-yahoo">
                                 <i class="icon-yahoo"></i>
                                 <i class="icon-yahoo"></i>
                             </a>
 
-                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
+                            <a href="#" class="social-icon si-dark si-large si-linkedin">
                                 <i class="icon-linkedin"></i>
                                 <i class="icon-linkedin"></i>
                             </a>
@@ -788,10 +791,7 @@
                         
                     </div>
                     <!--
-                    <div class="col_half col_last">
-                        Copyrights &copy; 2018 All Rights Reserved by Laurene Yu.<br>
-                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-                    </div>
+                    <i class="icon-envelope2"></i> laurene.yu@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> 718-123 4567 <span class="middot">&middot;</span> 
                     -->
                 </div>
 
