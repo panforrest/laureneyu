@@ -728,12 +728,20 @@
 
                 <div class="container clearfix">
 
+                    
+                    <!--
                     <div class="col_half">
-                        Copyrights &copy; 2018 All Rights Reserved by Laurene Yu.<br>
-                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-                    </div>
+                    -->	
+                    <div> 
 
-                    <div class="col_half col_last tright">
+
+                        
+                        <i class="icon-envelope2"></i> laurene.yu@gmail.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> 718-123 4567 <span class="middot">&middot;</span> 
+                        
+
+
+
+
                         <div class="fright clearfix">
                             <a href="#" class="social-icon si-small si-borderless si-facebook">
                                 <i class="icon-facebook"></i>
@@ -777,10 +785,14 @@
                         </div>
 
                         <div class="clear"></div>
-
-                        <i class="icon-envelope2"></i> info@dealp.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> 718-123 4567 <span class="middot">&middot;</span> 
+                        
                     </div>
-
+                    <!--
+                    <div class="col_half col_last">
+                        Copyrights &copy; 2018 All Rights Reserved by Laurene Yu.<br>
+                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+                    </div>
+                    -->
                 </div>
 
             </div><!-- #copyrights end -->
@@ -803,6 +815,7 @@
     
 	<!-- Footer Scripts
 	============================================= -->
+	<!--
 	<script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
 	<script type="text/javascript" src="js/jquery.gmap.js"></script>
 
@@ -836,6 +849,6 @@
 
 		});
 	</script>
-
+    -->
 </body>
 </html>
