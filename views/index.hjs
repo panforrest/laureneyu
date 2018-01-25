@@ -8,23 +8,22 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-	
+    <!--	
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-
-	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-    
-    <!--
-    
-    <link rel="stylesheet" href="/build/css/style.min.css" type="text/css" />
     -->
+    
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />    
+    <link rel="stylesheet" href="/build/css/style.min.css" type="text/css" />
+
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
@@ -104,7 +103,7 @@
 					<img src="images/slider/boxed/4.jpg" alt="Slider 2" title="#nivocaption2" />
 					<img src="images/laurene/VISUAL-ARTS.jpg" alt="Slider 3" title="#nivocaption3" />
 					<img src="images/laurene/i-am-a-writer.jpg" alt="Slider 4" title="#nivocaption4" />
-					<img src="images/laurene/acting.jpeg" alt="Slider 4" title="#nivocaption5" />
+					<img src="images/laurene/acting.jpeg" alt="Slider 5" title="#nivocaption5" />
 				</div>
 
 				<div id="nivocaption1" class="nivo-html-caption">I am an artist</div>
@@ -185,7 +184,7 @@
 						<div class="col_one_third nobottommargin">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img src="images/laurene/LaureneYuActing.png" alt="Why choose Us?">
+									<img src="images/laurene/LaureneYuActing.png" alt="What kind of Performing Artist?">
 								</div>
 								<div class="fbox-desc">
 									<h3>What kind of Performing Artist?<span class="subtitle">Acting and performing art redefine my brand.</span></h3>
@@ -197,7 +196,7 @@
 						<div class="col_one_third nobottommargin">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img src="images/laurene/laurene_design1.png" alt="Why choose Us?">
+									<img src="images/laurene/laurene_design1.png" alt="Design What?">
 								</div>
 								<div class="fbox-desc">
 									<h3>Design What?<span class="subtitle">Artwork makes my customers enjoy life to the most.</span></h3>
@@ -209,7 +208,7 @@
 						<div class="col_one_third nobottommargin col_last">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img src="images/laurene/writing.jpeg" alt="Why choose Us?">
+									<img src="images/laurene/writing.jpeg" alt="Why writing?">
 								</div>
 								<div class="fbox-desc">
 									<h3>Why Writing?<span class="subtitle">Because it is my passion.</span></h3>
@@ -272,7 +271,7 @@
 							<article class="portfolio-item pf-media pf-icons">
 								<div class="portfolio-image">
 									<a href="portfolio-single.html">
-										<img src="images/laurene/designWork.jpg" alt="Open Imagination">
+										<img src="images/laurene/designWork.jpg" alt="Artwork 1">
 									</a>
 									<div class="portfolio-overlay">
 										<a href="images/laurene/designWork.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
@@ -288,7 +287,7 @@
 							<article class="portfolio-item pf-illustrations">
 								<div class="portfolio-image">
 									<a href="portfolio-single.html">
-										<img src="images/laurene/laurene_design.jpg" alt="Locked Steel Gate">
+										<img src="images/laurene/laurene_design.jpg" alt="Artwork 2">
 									</a>
 									<div class="portfolio-overlay">
 										<a href="images/laurene/laurene_design.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
@@ -304,7 +303,7 @@
 							<article class="portfolio-item pf-graphics pf-uielements">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="images/laurene/laurene_design1_1.png" alt="Mac Sunglasses">
+										<img src="images/laurene/laurene_design1_1.png" alt="Artwork 3">
 									</a>
 									<div class="portfolio-overlay">
 										
@@ -320,7 +319,7 @@
 							<article class="portfolio-item pf-illustrations pf-graphics">
 								<div class="portfolio-image">
 									<a href="#">
-										<img src="images/laurene/design4.jpg" alt="Mac Sunglasses">
+										<img src="images/laurene/design4.jpg" alt="Artwork 4">
 									</a>
 									<div class="portfolio-overlay" data-lightbox="gallery">
 										<a href="images/laurene/design4.jpg" class="left-icon" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
@@ -360,7 +359,7 @@
 
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/laurene/acting4.png" alt="John Doe">
+									<img src="images/laurene/acting4.png" alt="Role 1">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Role 1</h4><span>Film</span></div>
@@ -375,7 +374,7 @@
 
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/laurene/acting3.png" alt="Nix Maxwell">
+									<img src="images/laurene/acting3.png" alt="Role 2">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Role 2</h4><span>Television</span></div>
@@ -392,7 +391,7 @@
 
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/laurene/acting2.png" alt="Josh Clark">
+									<img src="images/laurene/acting2.png" alt="Role 3">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Role 3</h4><span>Theater</span></div>
@@ -407,7 +406,7 @@
 
 							<div class="team team-list clearfix">
 								<div class="team-image">
-									<img src="images/laurene/acting1.png" alt="Mary Jane">
+									<img src="images/laurene/acting1.png" alt="Role 4">
 								</div>
 								<div class="team-desc">
 									<div class="team-title"><h4>Role 4</h4><span>Commercial</span></div>
@@ -813,16 +812,16 @@
 	<!-- Go To Top
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
-    
+	<!--     
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/jquery.nivo.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
+    -->    
     
-    
-	<!-- 
+
     <script type="text/javascript" src="build/vendor.min.js"></script>
-    -->
+
 	<!-- Footer Scripts
 	============================================= -->
 	<!--

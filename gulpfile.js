@@ -10,6 +10,7 @@ gulp.task('build', function(){
     		[
 				'./public/js/jquery.js',
 				'./public/js/plugins.js',
+                './public/js/jquery.nivo.js',
 				'./public/js/functions.js'
     		]
     	)
@@ -25,12 +26,12 @@ gulp.task('css', function(){
             [
                 './public/css/bootstrap.css',
                 './public/style.css',
-                './public/css/swiper.css',
+                // './public/css/swiper.css',
                 './public/css/dark.css',
                 // './public/css/font-icons.css',
                 './public/css/animate.css',
                 './public/css/magnific-popup.css',
-                // './public/css/custom.css',
+                './public/css/nivo-slider.css',
                 './public/css/responsive.css'
             ]
         )
