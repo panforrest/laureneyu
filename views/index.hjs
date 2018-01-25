@@ -8,23 +8,23 @@
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-	<!--
+	
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 	<link rel="stylesheet" href="css/dark.css" type="text/css" />
-    
-	
-    
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
-    -->
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
     
-    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <!--
+    
     <link rel="stylesheet" href="/build/css/style.min.css" type="text/css" />
-    
+    -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
@@ -44,7 +44,7 @@
 	<div id="wrapper" class="clearfix">
 
 		<div id="home" class="page-section" style="position:absolute;top:0;left:0;width:100%;height:200px;z-index:-2;"></div>
-
+        <!--
 		<section id="slider" class="slider-parallax full-screen with-header swiper_wrapper clearfix">
 
 			<div class="slider-parallax-inner">
@@ -72,25 +72,8 @@
 							</div>
 						</div>
 
-						<!--
-						<div class="swiper-slide dark">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">Acting</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Powerful Performance &amp; in film, television, theatre, music, dance, and commercial.</p>
-								</div>
-							</div>
-							<div class="video-wrap">
-								<video poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
-                                
-									<source src='images/videos/explore.mp4' type='video/mp4' />
-                                
-									<source src='images/videos/explore.webm' type='video/webm' />
-								</video>
-								<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
-							</div>
-						</div>
-						-->
+						
+
 						<div class="swiper-slide" style="background-image: url('images/laurene/i-am-a-writer.jpg'); background-position: center top;">
 							<div class="container clearfix">
 								<div class="slider-caption">
@@ -108,6 +91,32 @@
 			</div>
 
 		</section>
+        -->
+
+
+        <section id="slider" class="boxed-slider">
+
+			<div class="container clearfix">
+
+				<div class="nivoSlider">
+
+					<img src="images/slider/boxed/2.jpg" alt="Slider 1" title="#nivocaption1" />
+					<img src="images/slider/boxed/4.jpg" alt="Slider 2" title="#nivocaption2" />
+					<img src="images/laurene/VISUAL-ARTS.jpg" alt="Slider 3" title="#nivocaption3" />
+					<img src="images/laurene/i-am-a-writer.jpg" alt="Slider 4" title="#nivocaption4" />
+					<img src="images/laurene/acting.jpeg" alt="Slider 4" title="#nivocaption5" />
+				</div>
+
+				<div id="nivocaption1" class="nivo-html-caption">I am an artist</div>
+				<div id="nivocaption2" class="nivo-html-caption">This is where I am</div>
+				<div id="nivocaption3" class="nivo-html-caption">Something I can never stop doing</div>
+				<div id="nivocaption4" class="nivo-html-caption">Big part of my life</div>
+				<div id="nivocaption5" class="nivo-html-caption">Acting is my true love</div>
+
+			</div>
+
+		<
+
 
 		<!-- Header
 		============================================= -->
@@ -200,7 +209,7 @@
 						<div class="col_one_third nobottommargin col_last">
 							<div class="feature-box media-box">
 								<div class="fbox-media">
-									<img src="images/laurene/LaureneWriting.png" alt="Why choose Us?">
+									<img src="images/laurene/writing.jpeg" alt="Why choose Us?">
 								</div>
 								<div class="fbox-desc">
 									<h3>Why Writing?<span class="subtitle">Because it is my passion.</span></h3>
@@ -804,15 +813,16 @@
 	<!-- Go To Top
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
-    <!-- 
+    
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
-    -->
     
-	
+    
+	<!-- 
     <script type="text/javascript" src="build/vendor.min.js"></script>
-    
+    -->
 	<!-- Footer Scripts
 	============================================= -->
 	<!--
@@ -850,5 +860,32 @@
 		});
 	</script>
     -->
+
+    <script type="text/javascript">
+
+		jQuery(document).ready(function($) {
+
+			$('.nivoSlider').nivoSlider({
+				effect: 'random',
+				slices: 15,
+				boxCols: 12,
+				boxRows: 6,
+				animSpeed: 500,
+				pauseTime: 2000,
+				directionNav: true,
+				controlNav: true,
+				pauseOnHover: true,
+				prevText: '<i class="icon-angle-left"></i>',
+				nextText: '<i class="icon-angle-right"></i>',
+				afterLoad: function(){
+					$('#slider').find('.nivo-caption').addClass('slider-caption-bg');
+				}
+			});
+
+		});
+
+	</script>
+
+
 </body>
 </html>
