@@ -141,7 +141,7 @@
 				<div class="tp-banner-container">
 					<div class="tp-banner" >
 						<ul>    <!-- SLIDE  -->
-							<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/i_am_an_artist_thumb.jpg" data-delay="10000"  data-saveperformance="off" data-title="Responsive Design">
+							<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/i_am_an_artist_thumb.jpg" data-delay="10000"  data-saveperformance="off" data-title="I am an artist">
 								<!-- MAIN IMAGE -->
 								<img src="images/laurene/i_am_an_artist.jpg"  alt="kenburns1"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
 								<!-- LAYERS -->
@@ -206,7 +206,7 @@
 
 							</li>
 							<!-- SLIDE  -->
-							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/this_is_where_i_am_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Unlimited Possibilities">
+							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/this_is_where_i_am_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="This is where I am">
 								<!-- MAIN IMAGE -->
 								<img src="images/laurene/this_is_where_i_am.jpg"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
 								<!-- LAYERS -->
@@ -269,7 +269,7 @@
 								
 
 							</li>
-							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/VISUAL-ARTS_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Unlimited Possibilities">
+							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/VISUAL-ARTS_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="I cannot stop working on">
 								<!-- MAIN IMAGE -->
 								<img src="images/laurene/VISUAL-ARTS.jpg"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
 								<!-- LAYERS -->
@@ -332,7 +332,7 @@
 								
 
 							</li>
-							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/acting_true_love_thumb.jpeg" data-delay="10000"  data-saveperformance="off"  data-title="Unlimited Possibilities">
+							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/acting_true_love_thumb.jpeg" data-delay="10000"  data-saveperformance="off"  data-title="Acting is my true love">
 								<!-- MAIN IMAGE -->
 								<img src="images/laurene/acting_true_love.jpeg"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
 								<!-- LAYERS -->
@@ -395,7 +395,7 @@
 								
 
 							</li>
-							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/i-am-a-writer_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="Unlimited Possibilities">
+							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/i-am-a-writer_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="A big part of my life">
 								<!-- MAIN IMAGE -->
 								<img src="images/laurene/i-am-a-writer.jpg"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
 								<!-- LAYERS -->
