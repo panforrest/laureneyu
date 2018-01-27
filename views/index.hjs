@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-
+    <link rel="stylesheet" href="css/camera.css" type="text/css" />
 	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
     
@@ -128,344 +128,6 @@
 
 		</section>
         -->
-
-
-        <section id="slider" class="slider-parallax revslider-wrap clearfix">
-			<div class="slider-parallax-inner">
-
-				<!--
-				#################################
-					- THEMEPUNCH BANNER -
-				#################################
-				-->
-				<div class="tp-banner-container">
-					<div class="tp-banner" >
-						<ul>    <!-- SLIDE  -->
-							<li class="dark" data-transition="fade" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/i_am_an_artist_thumb.jpg" data-delay="10000"  data-saveperformance="off" data-title="I am an artist">
-								<!-- MAIN IMAGE -->
-								<img src="images/laurene/i_am_an_artist.jpg"  alt="kenburns1"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
-								<!-- LAYERS -->
-
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-								data-x="355"
-								data-y="215"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1000"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-								data-x="200"
-								data-y="230"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1200"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #666; white-space: nowrap;">I am an artist</div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
-								data-x="245"
-								data-y="340"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1400"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; max-width: 650px; white-space: normal;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme"
-								data-x="496"
-								data-y="450"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1550"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-
-								
-
-							</li>
-							<!-- SLIDE  -->
-							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/this_is_where_i_am_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="This is where I am">
-								<!-- MAIN IMAGE -->
-								<img src="images/laurene/this_is_where_i_am.jpg"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
-								<!-- LAYERS -->
-
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-								data-x="453"
-								data-y="215"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1000"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; white-space: nowrap;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-								data-x="264"
-								data-y="230"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1200"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; white-space: nowrap;">This is where I am</div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
-								data-x="245"
-								data-y="340"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1400"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 650px; white-space: normal;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme"
-								data-x="508"
-								data-y="450"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1550"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								
-
-							</li>
-							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/VISUAL-ARTS_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="I cannot stop working on">
-								<!-- MAIN IMAGE -->
-								<img src="images/laurene/VISUAL-ARTS.jpg"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
-								<!-- LAYERS -->
-
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-								data-x="453"
-								data-y="215"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1000"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; white-space: nowrap;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-								data-x="264"
-								data-y="230"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1200"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; white-space: nowrap;">I cannot stop working on</div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
-								data-x="245"
-								data-y="340"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1400"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 650px; white-space: normal;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme"
-								data-x="508"
-								data-y="450"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1550"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								
-
-							</li>
-							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/acting_true_love_thumb.jpeg" data-delay="10000"  data-saveperformance="off"  data-title="Acting is my true love">
-								<!-- MAIN IMAGE -->
-								<img src="images/laurene/acting_true_love.jpeg"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
-								<!-- LAYERS -->
-
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-								data-x="453"
-								data-y="215"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1000"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; white-space: nowrap;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-								data-x="264"
-								data-y="230"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1200"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #999; white-space: nowrap;">Acting is my true love</div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
-								data-x="245"
-								data-y="340"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1400"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 650px; white-space: normal;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme"
-								data-x="508"
-								data-y="450"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1550"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								
-
-							</li>
-							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500" data-thumb="images/laurene/i-am-a-writer_thumb.jpg" data-delay="10000"  data-saveperformance="off"  data-title="A big part of my life">
-								<!-- MAIN IMAGE -->
-								<img src="images/laurene/i-am-a-writer.jpg"  alt="kenburns6"  data-bgposition="center bottom" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scale="100" data-scaleend="120" data-bgpositionend="center top">
-								<!-- LAYERS -->
-
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-caps-text uppercase"
-								data-x="453"
-								data-y="215"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1000"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; white-space: nowrap;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-emphasis-text nopadding noborder"
-								data-x="264"
-								data-y="230"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1200"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; white-space: nowrap;">A big part of my life</div>
-
-								<div class="tp-caption customin ltl tp-resizeme revo-slider-desc-text"
-								data-x="245"
-								data-y="340"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1400"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								data-endeasing="Power4.easeIn" style="z-index: 3; color: #333; max-width: 650px; white-space: normal;"></div>
-
-								<div class="tp-caption customin ltl tp-resizeme"
-								data-x="508"
-								data-y="450"
-								data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
-								data-speed="800"
-								data-start="1550"
-								data-easing="easeOutQuad"
-								data-splitin="none"
-								data-splitout="none"
-								data-elementdelay="0.01"
-								data-endelementdelay="0.1"
-								data-endspeed="1000"
-								
-
-							</li>
-						</ul>
-					</div>
-				</div><!-- END REVOLUTION SLIDER -->
-
-			</div>
-		</section>
-
-
 		<!-- Header
 		============================================= -->
 		<header id="header" class="full-header">
@@ -510,6 +172,43 @@
 			</div>
 
 		</header><!-- #header end -->
+
+        <section id="slider" class="slider-parallax clearfix">
+
+			<div class="camera_wrap" id="camera_wrap_1">
+				<div data-thumb="" data-src="images/laurene/i_am_an_artist1.jpg">
+					<div class="camera_caption fadeFromBottom flex-caption slider-caption-bg" style="left: 0; border-radius: 0; max-width: none;">
+						<div class="container">I am an artist</div>
+					</div>
+				</div>
+				<div data-thumb="" data-src="images/laurene/VISUAL-ARTS.jpg">
+					<div class="camera_caption fadeFromBottom flex-caption slider-caption-bg" style="left: 0; border-radius: 0; max-width: none;">
+						<div class="container">Something I cannot stop working on</div>
+					</div>
+				</div>
+				<div data-thumb="" data-src="images/laurene/acting_true_love.jpeg">
+					<div class="camera_caption fadeFromBottom flex-caption slider-caption-bg" style="left: 0; border-radius: 0; max-width: none;">
+						<div class="container">Acting is my true love</div>
+					</div>
+				</div>
+				<div data-thumb="" data-src="images/laurene/i-am-a-writer.jpg">
+					<div class="camera_caption fadeFromBottom flex-caption slider-caption-bg" style="left: 0; border-radius: 0; max-width: none;">
+						<div class="container">Another big part of my life</div>
+					</div>
+				</div>
+				<div data-thumb="" data-src="images/laurene/this_is_where_i_am.jpg">
+					<div class="camera_caption fadeFromBottom flex-caption slider-caption-bg" style="left: 0; border-radius: 0; max-width: none;">
+						<div class="container">This is where I am</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+
+
+
 
 		<div class="clear"></div>
 
@@ -1164,147 +863,31 @@
 	    
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/jquery.camera.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
 
-	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
-	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
-	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-
 	<script type="text/javascript">
 
-		var tpj=jQuery;
-		tpj.noConflict();
+		jQuery(document).ready(function($) {
 
-		tpj(document).ready(function() {
-
-			var apiRevoSlider = tpj('.tp-banner').show().revolution(
-			{
-				sliderType:"standard",
-				jsFileLocation:"include/rs-plugin/js/",
-				dottedOverlay:"none",
-				delay:16000,
-				startwidth:1140,
-				startheight:600,
-				hideThumbs:200,
-
-				thumbWidth:100,
-				thumbHeight:50,
-				thumbAmount:5,
-
-				navigation: {
-                    keyboardNavigation: "on",
-                    keyboard_direction: "horizontal",
-                    mouseScrollNavigation: "off",
-                    onHoverStop: "off",
-                    touch: {
-                        touchenabled: "on",
-                        swipe_threshold: 75,
-                        swipe_min_touches: 1,
-                        swipe_direction: "horizontal",
-                        drag_block_vertical: false
-                    },
-                    arrows: {
-                        style: "hades",
-                        enable: true,
-                        hide_onmobile: false,
-                        hide_onleave: false,
-                        tmp: '<div class="tp-arr-allwrapper">	<div class="tp-arr-imgholder"></div></div>',
-                        left: {
-                            h_align: "left",
-                            v_align: "center",
-                            h_offset: 10,
-                            v_offset: 0
-                        },
-                        right: {
-                            h_align: "right",
-                            v_align: "center",
-                            h_offset: 10,
-                            v_offset: 0
-                        }
-                    },
-                },
-
-				touchenabled:"on",
-				onHoverStop:"on",
-
-				swipe_velocity: 0.7,
-				swipe_min_touches: 1,
-				swipe_max_touches: 1,
-				drag_block_vertical: false,
-
-										parallax:"mouse",
-				parallaxBgFreeze:"on",
-				parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
-
-				keyboardNavigation:"off",
-
-				navigationHAlign:"center",
-				navigationVAlign:"bottom",
-				navigationHOffset:0,
-				navigationVOffset:20,
-
-				soloArrowLeftHalign:"left",
-				soloArrowLeftValign:"center",
-				soloArrowLeftHOffset:20,
-				soloArrowLeftVOffset:0,
-
-				soloArrowRightHalign:"right",
-				soloArrowRightValign:"center",
-				soloArrowRightHOffset:20,
-				soloArrowRightVOffset:0,
-
-				shadow:0,
-				fullWidth:"off",
-				fullScreen:"on",
-
-				spinner:"spinner4",
-
-				stopLoop:"off",
-				stopAfterLoops:-1,
-				stopAtSlide:-1,
-
-				shuffle:"off",
-
-				autoHeight:"off",
-				forceFullWidth:"off",
-
-
-
-				hideThumbsOnMobile:"off",
-				hideNavDelayOnMobile:1500,
-				hideBulletsOnMobile:"off",
-				hideArrowsOnMobile:"off",
-				hideThumbsUnderResolution:0,
-
-				hideSliderAtLimit:0,
-				hideCaptionAtLimit:0,
-				hideAllCaptionAtLilmit:0,
-				startWithSlide:0,
+			$('#camera_wrap_1').camera({
+				thumbnails: true,
+				height: '40%',
+				loader: 'pie',
+				loaderPadding: 1,
+				loaderStroke: 5,
+				onLoaded: function() {
+					$('#camera_wrap_1').find('.camera_next').html('<i class="icon-angle-right"></i>');
+					$('#camera_wrap_1').find('.camera_prev').html('<i class="icon-angle-left"></i>');
+				}
 			});
 
-			apiRevoSlider.bind("revolution.slide.onloaded",function (e) {
-				setTimeout( function(){ SEMICOLON.slider.sliderParallaxDimensions(); }, 200 );
-			});
+		});
 
-			apiRevoSlider.bind("revolution.slide.onchange",function (e,data) {
-				SEMICOLON.slider.revolutionSliderMenu();
-			});
-
-		}); //ready
-
-	</script>       
+	</script>   
     
     <!-- 
     <script type="text/javascript" src="build/vendor.min.js"></script>
