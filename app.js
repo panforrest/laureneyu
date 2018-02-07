@@ -4,9 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose')
+require('dotenv').config()  //require(dotenv).congif
+var sessions = require('client-sessions')
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var account = require('./routes/account');
+var api = require('./routes/api');
 
 var app = express();
 
@@ -14,16 +19,35 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hjs');
 
+mongoose.connect(process.env.DB_URL, function(err, res){
+  if (err) {
+    console.log('connection to database failed: '+err)
+  }
+  else{
+    console.log('connection to database succeed ')
+  }
+})
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(sessions({
+  cookieName: 'session',  //session
+  secret: process.env.SESSION_SECRET,
+  duration: 24*60*60*1000,
+  activeDuration: 30*60*1000
+
+}))
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/api', api)
+app.use('/account', account)
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
