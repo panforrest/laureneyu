@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
-// import { Home } from './components/layout'  
+import { Home } from './components/layout'  
 
 class App extends Component {
 	render() {
 		return (
             <div>
 
-                This is React!
+                <Home />
             </div>
 		)
 	}
