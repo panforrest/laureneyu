@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { APIManager } from '../../utils'
+import actions from '../../actions'
+import { connect } from 'react-redux'
 
 class Login extends Component {
     constructor(){
@@ -34,6 +36,8 @@ class Login extends Component {
 
             console.log(JSON.stringify(response))
             // var result = response.profile
+            var result = response.user
+            this.props.currentUserReceived(result)
         })
         // this.props.onLogin(this.state.visitor)
     }
@@ -50,4 +54,19 @@ class Login extends Component {
 	}
 }
 
-export default Login
+const stateToProps = (state) => {
+    return {
+        // profile: state.profile.user,
+        currentUser: state.account.currentUser
+    }
+}
+
+const dispatchToProps = (dispatch) => {
+    return {
+        // profileCreated: (profile) => dispatch(actions.profileCreated(profile)),
+        currentUserReceived: (profile) => dispatch(actions.currentUserReceived(profile))
+    }
+}
+
+
+export default connect(stateToProps, dispatchToProps)(Login)
