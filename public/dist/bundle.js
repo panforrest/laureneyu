@@ -7892,7 +7892,7 @@ exports.Home = _Home2.default;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -7905,6 +7905,14 @@ var _containers = __webpack_require__(31);
 
 var _presentation = __webpack_require__(34);
 
+var _utils = __webpack_require__(36);
+
+var _actions = __webpack_require__(91);
+
+var _actions2 = _interopRequireDefault(_actions);
+
+var _reactRedux = __webpack_require__(57);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -7914,31 +7922,62 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Home = function (_Component) {
-	_inherits(Home, _Component);
+    _inherits(Home, _Component);
 
-	function Home() {
-		_classCallCheck(this, Home);
+    function Home() {
+        _classCallCheck(this, Home);
 
-		return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
-	}
+        return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+    }
 
-	_createClass(Home, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(_containers.Public, null),
-				_react2.default.createElement(_containers.Protected, null),
-				_react2.default.createElement(_presentation.Login, null)
-			);
-		}
-	}]);
+    _createClass(Home, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
 
-	return Home;
+            // console.log('componentDidMount: ')
+            _utils.APIManager.get('/account/currentuser', null, function (err, response) {
+                if (err) {
+                    var msg = err.message || err;
+                    alert(msg);
+                    return;
+                }
+                // console.log('Admin.js: ', JSON.stringify(response.profile))
+                _this2.props.currentUserReceived(response.user);
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(_containers.Public, null),
+                this.props.currentUser ? _react2.default.createElement(_containers.Protected, null) : _react2.default.createElement(_presentation.Login, null)
+            );
+        }
+    }]);
+
+    return Home;
 }(_react.Component);
 
-exports.default = Home;
+var stateToProps = function stateToProps(state) {
+    return {
+        // profile: state.profile.user,
+        currentUser: state.account.currentUser
+    };
+};
+
+var dispatchToProps = function dispatchToProps(dispatch) {
+    return {
+        // profileCreated: (profile) => dispatch(actions.profileCreated(profile)),
+        currentUserReceived: function currentUserReceived(profile) {
+            return dispatch(_actions2.default.currentUserReceived(profile));
+        }
+    };
+};
+
+exports.default = (0, _reactRedux.connect)(stateToProps, dispatchToProps)(Home);
 
 /***/ }),
 /* 31 */
@@ -7973,7 +8012,7 @@ exports.Public = _Public2.default;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -7981,14 +8020,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
-
-var _utils = __webpack_require__(36);
-
-var _actions = __webpack_require__(91);
-
-var _actions2 = _interopRequireDefault(_actions);
-
-var _reactRedux = __webpack_require__(57);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -7999,66 +8030,29 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Protected = function (_Component) {
-    _inherits(Protected, _Component);
+	_inherits(Protected, _Component);
 
-    function Protected() {
-        _classCallCheck(this, Protected);
+	function Protected() {
+		_classCallCheck(this, Protected);
 
-        return _possibleConstructorReturn(this, (Protected.__proto__ || Object.getPrototypeOf(Protected)).apply(this, arguments));
-    }
+		return _possibleConstructorReturn(this, (Protected.__proto__ || Object.getPrototypeOf(Protected)).apply(this, arguments));
+	}
 
-    _createClass(Protected, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            var _this2 = this;
+	_createClass(Protected, [{
+		key: 'render',
+		value: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				'This is Protected component.'
+			);
+		}
+	}]);
 
-            // console.log('componentDidMount: ')
-            _utils.APIManager.get('/account/currentuser', null, function (err, response) {
-                if (err) {
-                    var msg = err.message || err;
-                    alert(msg);
-                    return;
-                }
-                // console.log('Admin.js: ', JSON.stringify(response.profile))
-                _this2.props.currentUserReceived(response.user);
-            });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-
-            var email = this.props.currentUser ? this.props.currentUser.email : [];
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                'This is Protected component.',
-                _react2.default.createElement('br', null),
-                email
-            );
-        }
-    }]);
-
-    return Protected;
+	return Protected;
 }(_react.Component);
 
-var stateToProps = function stateToProps(state) {
-    return {
-        // profile: state.profile.user,
-        currentUser: state.account.currentUser
-    };
-};
-
-var dispatchToProps = function dispatchToProps(dispatch) {
-    return {
-        // profileCreated: (profile) => dispatch(actions.profileCreated(profile)),
-        currentUserReceived: function currentUserReceived(profile) {
-            return dispatch(_actions2.default.currentUserReceived(profile));
-        }
-    };
-};
-
-exports.default = (0, _reactRedux.connect)(stateToProps, dispatchToProps)(Protected);
+exports.default = Protected;
 
 /***/ }),
 /* 33 */

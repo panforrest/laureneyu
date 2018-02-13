@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import { Public, Protected } from '../containers'
-import { Login } from '../presentation'
 import { APIManager } from '../../utils'
 import actions from '../../actions'
 import { connect } from 'react-redux'
 
-class Home extends Component {
+class Protected extends Component {
     componentDidMount(){
         // console.log('componentDidMount: ')
         APIManager.get('/account/currentuser', null, (err, response) => {
@@ -19,22 +17,15 @@ class Home extends Component {
         })
     }
 
+
 	render(){
+
+        const email = (this.props.currentUser) ? this.props.currentUser.email : []    
+
 		return(
-			<div>
-                <Public />
-                { (this.props.currentUser) ? <Protected /> : <Login />  
-
-                }
-
-
-                
-                
-			</div>
-
+			<div>This is Protected component.<br />{email}</div>
 		)
 	}
-
 }
 
 const stateToProps = (state) => {
@@ -51,4 +42,4 @@ const dispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(stateToProps, dispatchToProps)(Home)
+export default connect(stateToProps, dispatchToProps)(Protected)
