@@ -14,4 +14,8 @@ router.get('/protected', function(req, res, next) {
   res.render('protected', { title: 'Express' });
 });
 
+router.get('/index_react', function(req, res, next) {
+  res.render('index_react', { title: 'Express' });
+});
+
 module.exports = router;

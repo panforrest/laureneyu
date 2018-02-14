@@ -1,3 +1,10 @@
+            // <div>
+            //     <h2>Log in</h2>
+            //     <input onChange={this.update.bind(this)} type='text' id='email' placeholder='Email' />
+            //     <input onChange={this.update.bind(this)} type='password' id='password' placeholder='Password' /> 
+            //     <button onClick={this.login.bind(this)} >Submit</button>
+            // </div>
+
 import React, { Component } from 'react'
 import { APIManager } from '../../utils'
 import actions from '../../actions'
@@ -44,12 +51,35 @@ class Login extends Component {
 
 	render(){
 		return (
-			<div>
-                <h2>Log in</h2>
-                <input onChange={this.update.bind(this)} type='text' id='email' placeholder='Email' />
-                <input onChange={this.update.bind(this)} type='password' id='password' placeholder='Password' /> 
-                <button onClick={this.login.bind(this)} >Submit</button>
-			</div>
+			
+
+            <div>
+                
+                    <div className="content-wrap">
+                        <div className="container clearfix">
+                            <div className="postcontent nobottommargin clearfix">
+                                <div className="col_three_fifth bothsidebar nobottommargin">
+                                
+
+                                    <h3>To view my work, please login.</h3>
+
+                                    <input onChange={this.update.bind(this)} type='text' id='email' placeholder='Email' className="form-control" style={{marginTop:1, marginLeft:12, width:95+'%'}}/><br />
+                                    <input onChange={this.update.bind(this)} type='password' id='password' placeholder='Password' className="form-control" style={{marginTop:1, marginLeft:12, width:95+'%'}}/><br />
+                    
+                    
+                                    <button onClick={this.login.bind(this)} className="btn btn-success">Submit</button><br />
+                                </div>
+                            </div>    
+                        </div>       
+                    </div>     
+                
+            </div>
+
+
+
+
+
+
 		)
 	}
 }

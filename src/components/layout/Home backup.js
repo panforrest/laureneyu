@@ -22,16 +22,10 @@ class Home extends Component {
 	render(){
 		return(
 			<div>
-                
+                <Public />
+                { (this.props.currentUser) ? <Protected /> : <Login />  
 
-                    <Public />
-                    { (this.props.currentUser) ? <Protected /> : <div className="heading-block center"><Login /></div> 
-
-                    }
-
-                    
-
-                
+                }
 
 
                 
