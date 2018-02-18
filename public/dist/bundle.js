@@ -9170,6 +9170,8 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _utils = __webpack_require__(51);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9188,108 +9190,1092 @@ var Protected = function (_Component) {
 	}
 
 	_createClass(Protected, [{
-		key: "render",
+		key: 'logout',
+		value: function logout(event) {
+			var _this2 = this;
+
+			//logout(){
+			// console.log('logout: ')
+			_utils.APIManager.get('/account/logout', null, function (err, response) {
+				if (err) {
+					var msg = err.message || err;
+					alert(msg);
+					return;
+				}
+				console.log(_this2.props.currentUser.email);
+				window.location.href = '/';
+			});
+		}
+	}, {
+		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
-				"div",
-				{ className: "container clearfix" },
+				'section',
+				{ id: 'content' },
 				_react2.default.createElement(
-					"div",
-					{ className: "col_one_third nobottommargin" },
+					'div',
+					{ className: 'content-wrap' },
 					_react2.default.createElement(
-						"div",
-						{ className: "feature-box media-box" },
+						'section',
+						{ id: 'section-about', className: 'page-section' },
 						_react2.default.createElement(
-							"div",
-							{ className: "fbox-media" },
-							_react2.default.createElement("img", { src: "images/laurene/LaureneYuActing.png", alt: "What kind of Performing Artist?" })
-						),
-						_react2.default.createElement(
-							"div",
-							{ className: "fbox-desc" },
+							'div',
+							{ className: 'container clearfix' },
 							_react2.default.createElement(
-								"h3",
-								null,
-								"What kind of Performing Artist?",
+								'div',
+								{ className: 'col_one_third nobottommargin' },
 								_react2.default.createElement(
-									"span",
-									{ className: "subtitle" },
-									"Acting and performing art redefine my brand."
+									'div',
+									{ className: 'feature-box media-box' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-media' },
+										_react2.default.createElement('img', { src: 'images/laurene/LaureneYuActing.png', alt: 'What kind of Performing Artist?' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-desc' },
+										_react2.default.createElement(
+											'h3',
+											null,
+											'What kind of Performing Artist?',
+											_react2.default.createElement(
+												'span',
+												{ className: 'subtitle' },
+												'Acting and performing art redefine my brand.'
+											)
+										),
+										_react2.default.createElement(
+											'p',
+											null,
+											'Films, TV, Commercials, theatre, musical, you name it.'
+										)
+									)
 								)
 							),
 							_react2.default.createElement(
-								"p",
-								null,
-								"Films, TV, Commercials, theatre, musical, you name it."
-							)
-						)
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "col_one_third nobottommargin" },
-					_react2.default.createElement(
-						"div",
-						{ className: "feature-box media-box" },
-						_react2.default.createElement(
-							"div",
-							{ className: "fbox-media" },
-							_react2.default.createElement("img", { src: "images/laurene/laurene_design1.png", alt: "Design What?" })
-						),
-						_react2.default.createElement(
-							"div",
-							{ className: "fbox-desc" },
-							_react2.default.createElement(
-								"h3",
-								null,
-								"Design What?",
+								'div',
+								{ className: 'col_one_third nobottommargin' },
 								_react2.default.createElement(
-									"span",
-									{ className: "subtitle" },
-									"Artwork makes my customers enjoy life to the most."
+									'div',
+									{ className: 'feature-box media-box' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-media' },
+										_react2.default.createElement('img', { src: 'images/laurene/laurene_design1.png', alt: 'Design What?' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-desc' },
+										_react2.default.createElement(
+											'h3',
+											null,
+											'Design What?',
+											_react2.default.createElement(
+												'span',
+												{ className: 'subtitle' },
+												'Artwork makes my customers enjoy life to the most.'
+											)
+										),
+										_react2.default.createElement(
+											'p',
+											null,
+											'I am inspired to perfect my craft everyday.'
+										)
+									)
 								)
 							),
 							_react2.default.createElement(
-								"p",
-								null,
-								"I am inspired to perfect my craft everyday."
-							)
+								'div',
+								{ className: 'col_one_third nobottommargin col_last' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'feature-box media-box' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-media' },
+										_react2.default.createElement('img', { src: 'images/laurene/writing.jpeg', alt: 'Why writing?' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-desc' },
+										_react2.default.createElement(
+											'h3',
+											null,
+											'Why Writing?',
+											_react2.default.createElement(
+												'span',
+												{ className: 'subtitle' },
+												'Because it is my passion.'
+											)
+										),
+										_react2.default.createElement(
+											'p',
+											null,
+											'I do not necessarily invent. But my writing talents create what I really love.'
+										)
+									)
+								)
+							),
+							_react2.default.createElement('div', { className: 'clear' })
 						)
-					)
-				),
-				_react2.default.createElement(
-					"div",
-					{ className: "col_one_third nobottommargin col_last" },
+					),
 					_react2.default.createElement(
-						"div",
-						{ className: "feature-box media-box" },
+						'section',
+						{ id: 'section-design', className: 'page-section topmargin-lg' },
 						_react2.default.createElement(
-							"div",
-							{ className: "fbox-media" },
-							_react2.default.createElement("img", { src: "images/laurene/writing.jpeg", alt: "Why writing?" })
+							'div',
+							{ className: 'heading-block center' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Design'
+							),
+							_react2.default.createElement(
+								'span',
+								null,
+								'Some of the Awesome Visual Art Projects I\'ve worked on.'
+							)
 						),
 						_react2.default.createElement(
-							"div",
-							{ className: "fbox-desc" },
+							'div',
+							{ className: 'container clearfix center' },
 							_react2.default.createElement(
-								"h3",
-								null,
-								"Why Writing?",
+								'div',
+								{ id: 'portfolio', className: 'portfolio grid-container portfolio-nomargin clearfix' },
 								_react2.default.createElement(
-									"span",
-									{ className: "subtitle" },
-									"Because it is my passion."
+									'article',
+									{ className: 'portfolio-item pf-media pf-icons' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'portfolio-image' },
+										_react2.default.createElement(
+											'a',
+											{ href: 'portfolio-single.html' },
+											_react2.default.createElement('img', { src: 'images/laurene/designWork.jpg', alt: 'Artwork 1' })
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'portfolio-overlay' },
+											_react2.default.createElement(
+												'a',
+												{ href: 'images/laurene/designWork.jpg', className: 'left-icon', 'data-lightbox': 'image' },
+												_react2.default.createElement('i', { className: 'icon-line-plus' })
+											)
+										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'portfolio-desc' },
+										_react2.default.createElement(
+											'h3',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: 'portfolio-single.html' },
+												'Artwork 1'
+											)
+										),
+										_react2.default.createElement(
+											'span',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#' },
+												'Artwork 1 desctiption'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'article',
+									{ className: 'portfolio-item pf-illustrations' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'portfolio-image' },
+										_react2.default.createElement(
+											'a',
+											{ href: 'portfolio-single.html' },
+											_react2.default.createElement('img', { src: 'images/laurene/laurene_design.jpg', alt: 'Artwork 2' })
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'portfolio-overlay' },
+											_react2.default.createElement(
+												'a',
+												{ href: 'images/laurene/laurene_design.jpg', className: 'left-icon', 'data-lightbox': 'image' },
+												_react2.default.createElement('i', { className: 'icon-line-plus' })
+											)
+										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'portfolio-desc' },
+										_react2.default.createElement(
+											'h3',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: 'portfolio-single.html' },
+												'Artwork 2'
+											)
+										),
+										_react2.default.createElement(
+											'span',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#' },
+												'Artwork 2 description'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'article',
+									{ className: 'portfolio-item pf-graphics pf-uielements' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'portfolio-image' },
+										_react2.default.createElement(
+											'a',
+											{ href: '#' },
+											_react2.default.createElement('img', { src: 'images/laurene/laurene_design1_1.png', alt: 'Artwork 3' })
+										),
+										_react2.default.createElement('div', { className: 'portfolio-overlay' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'portfolio-desc' },
+										_react2.default.createElement(
+											'h3',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: 'portfolio-single-video.html' },
+												'Artwork 3'
+											)
+										),
+										_react2.default.createElement(
+											'span',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#' },
+												'Artwork 3 description'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'article',
+									{ className: 'portfolio-item pf-illustrations pf-graphics' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'portfolio-image' },
+										_react2.default.createElement(
+											'a',
+											{ href: '#' },
+											_react2.default.createElement('img', { src: 'images/laurene/design4.jpg', alt: 'Artwork 4' })
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'portfolio-overlay', 'data-lightbox': 'gallery' },
+											_react2.default.createElement(
+												'a',
+												{ href: 'images/laurene/design4.jpg', className: 'left-icon', 'data-lightbox': 'gallery-item' },
+												_react2.default.createElement('i', { className: 'icon-line-stack-2' })
+											)
+										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'portfolio-desc' },
+										_react2.default.createElement(
+											'h3',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: 'portfolio-single-gallery.html' },
+												'Artwork 4'
+											)
+										),
+										_react2.default.createElement(
+											'span',
+											null,
+											_react2.default.createElement(
+												'a',
+												{ href: '#' },
+												'Artwork 4 description'
+											)
+										)
+									)
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						'section',
+						{ id: 'section-acting', className: 'page-section topmargin-lg' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'heading-block center' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Acting'
+							),
+							_react2.default.createElement(
+								'span',
+								null,
+								'Roles that are highlights of my acting career.'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'container clearfix' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-md-6 bottommargin' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'team team-list clearfix' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'team-image' },
+										_react2.default.createElement('img', { src: 'images/laurene/acting4.png', alt: 'Role 1' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'team-desc' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'team-title' },
+											_react2.default.createElement(
+												'h4',
+												null,
+												'Role 1'
+											),
+											_react2.default.createElement(
+												'span',
+												null,
+												'Film'
+											)
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'team-content' },
+											'Role 1 description and date.'
+										)
+									)
 								)
 							),
 							_react2.default.createElement(
-								"p",
+								'div',
+								{ className: 'col-md-6 bottommargin' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'team team-list clearfix' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'team-image' },
+										_react2.default.createElement('img', { src: 'images/laurene/acting3.png', alt: 'Role 2' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'team-desc' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'team-title' },
+											_react2.default.createElement(
+												'h4',
+												null,
+												'Role 2'
+											),
+											_react2.default.createElement(
+												'span',
+												null,
+												'Television'
+											)
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'team-content' },
+											'Role 2 description and date.'
+										)
+									)
+								)
+							),
+							_react2.default.createElement('div', { className: 'clear' }),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-md-6 bottommargin' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'team team-list clearfix' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'team-image' },
+										_react2.default.createElement('img', { src: 'images/laurene/acting2.png', alt: 'Role 3' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'team-desc' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'team-title' },
+											_react2.default.createElement(
+												'h4',
+												null,
+												'Role 3'
+											),
+											_react2.default.createElement(
+												'span',
+												null,
+												'Theater'
+											)
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'team-content' },
+											'Role 3 description and date.'
+										)
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col-md-6 bottommargin' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'team team-list clearfix' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'team-image' },
+										_react2.default.createElement('img', { src: 'images/laurene/acting1.png', alt: 'Role 4' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'team-desc' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'team-title' },
+											_react2.default.createElement(
+												'h4',
+												null,
+												'Role 4'
+											),
+											_react2.default.createElement(
+												'span',
+												null,
+												'Commercial'
+											)
+										),
+										_react2.default.createElement(
+											'div',
+											{ className: 'team-content' },
+											'Role 4 description and date.'
+										)
+									)
+								)
+							),
+							_react2.default.createElement('div', { className: 'clear' })
+						)
+					),
+					_react2.default.createElement(
+						'section',
+						{ id: 'section-writing', className: 'page-section topmargin-lg' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'heading-block center bottommargin-lg' },
+							_react2.default.createElement(
+								'h2',
 								null,
-								"I do not necessarily invent. But my writing talents create what I really love."
+								'Writing'
+							),
+							_react2.default.createElement(
+								'span',
+								null,
+								'List of some features included in my writing Career.'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'container clearfix' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_one_third' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'feature-box fbox-center fbox-effect nobottomborder', 'data-animate': 'fadeIn' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-icon' },
+										_react2.default.createElement(
+											'a',
+											{ href: '#' },
+											_react2.default.createElement('i', { className: 'icon-phone2' })
+										)
+									),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Web content'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Web content description.'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_one_third' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'feature-box fbox-center fbox-effect nobottomborder', 'data-animate': 'fadeIn', 'data-delay': '200' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-icon' },
+										_react2.default.createElement(
+											'a',
+											{ href: '#' },
+											_react2.default.createElement('i', { className: 'icon-eye' })
+										)
+									),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Blogs'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Blogs description.'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_one_third col_last' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'feature-box fbox-center fbox-effect nobottomborder', 'data-animate': 'fadeIn', 'data-delay': '400' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-icon' },
+										_react2.default.createElement(
+											'a',
+											{ href: '#' },
+											_react2.default.createElement('i', { className: 'icon-star2' })
+										)
+									),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Features writing'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Features writing description.'
+									)
+								)
+							),
+							_react2.default.createElement('div', { className: 'clear' }),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_one_third' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'feature-box fbox-center fbox-effect nobottomborder', 'data-animate': 'fadeIn', 'data-delay': '600' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-icon' },
+										_react2.default.createElement(
+											'a',
+											{ href: '#' },
+											_react2.default.createElement('i', { className: 'icon-video' })
+										)
+									),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'News Reporting'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'News Reporting description.'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_one_third nobottommargin' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'feature-box fbox-center fbox-effect nobottomborder', 'data-animate': 'fadeIn', 'data-delay': '1400' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-icon' },
+										_react2.default.createElement(
+											'a',
+											{ href: '#' },
+											_react2.default.createElement('i', { className: 'icon-heart2' })
+										)
+									),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Non-Profit Writing'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Non-Profit Writing description.'
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_one_third nobottommargin col_last' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'feature-box fbox-center fbox-effect nobottomborder', 'data-animate': 'fadeIn', 'data-delay': '1600' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'fbox-icon' },
+										_react2.default.createElement(
+											'a',
+											{ href: '#' },
+											_react2.default.createElement('i', { className: 'icon-note' })
+										)
+									),
+									_react2.default.createElement(
+										'h3',
+										null,
+										'Business Plan Writing'
+									),
+									_react2.default.createElement(
+										'p',
+										null,
+										'Business Plan Writing description.'
+									)
+								)
+							),
+							_react2.default.createElement('div', { className: 'clear' })
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'divider divider-short divider-center topmargin-lg' },
+							_react2.default.createElement('i', { className: 'icon-star3' })
+						)
+					),
+					_react2.default.createElement(
+						'section',
+						{ id: 'section-testimonials', className: 'page-section section parallax dark', style: { backgroundImage: 'url(images/about/me-parallax.jpg)', padding: '200px 0' }, 'data-stellar-background-ratio': '0.3' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'container clearfix' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_half nobottommargin' },
+								'\xA0'
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_half nobottommargin col_last' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'heading-block center' },
+									_react2.default.createElement(
+										'h4',
+										null,
+										'What Clients say?'
+									),
+									_react2.default.createElement(
+										'span',
+										null,
+										'My Clients love my work & so do I!'
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding', 'data-arrows': 'false' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'flexslider' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'slider-wrap' },
+											_react2.default.createElement(
+												'div',
+												{ className: 'slide' },
+												_react2.default.createElement(
+													'div',
+													{ className: 'testi-content' },
+													_react2.default.createElement(
+														'p',
+														null,
+														'Laurene is the best. '
+													),
+													_react2.default.createElement(
+														'div',
+														{ className: 'testi-meta' },
+														'Steve Jobs',
+														_react2.default.createElement(
+															'span',
+															null,
+															'Apple Inc.'
+														)
+													)
+												)
+											),
+											_react2.default.createElement(
+												'div',
+												{ className: 'slide' },
+												_react2.default.createElement(
+													'div',
+													{ className: 'testi-content' },
+													_react2.default.createElement(
+														'p',
+														null,
+														'Laurene blows all the other girls away.'
+													),
+													_react2.default.createElement(
+														'div',
+														{ className: 'testi-meta' },
+														'Collis Ta\'eed',
+														_react2.default.createElement(
+															'span',
+															null,
+															'Envato Inc.'
+														)
+													)
+												)
+											),
+											_react2.default.createElement(
+												'div',
+												{ className: 'slide' },
+												_react2.default.createElement(
+													'div',
+													{ className: 'testi-content' },
+													_react2.default.createElement(
+														'p',
+														null,
+														'Breath taking.'
+													),
+													_react2.default.createElement(
+														'div',
+														{ className: 'testi-meta' },
+														'John Doe',
+														_react2.default.createElement(
+															'span',
+															null,
+															'XYZ Inc.'
+														)
+													)
+												)
+											)
+										)
+									)
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						'section',
+						{ id: 'section-contact', className: 'page-section' },
+						_react2.default.createElement(
+							'div',
+							{ className: 'heading-block title-center' },
+							_react2.default.createElement(
+								'h2',
+								null,
+								'Get in Touch with me'
+							),
+							_react2.default.createElement(
+								'span',
+								null,
+								'Like My Work? Contact Me using the Form below.'
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'container clearfix' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'fancy-title title-dotted-border' },
+								_react2.default.createElement(
+									'h3',
+									null,
+									'Send me an Email'
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'contact-widget' },
+								_react2.default.createElement('div', { className: 'contact-form-result' }),
+								_react2.default.createElement(
+									'form',
+									{ className: 'nobottommargin', id: 'template-contactform', name: 'template-contactform', action: 'include/sendemail.php', method: 'post' },
+									_react2.default.createElement('div', { className: 'form-process' }),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col_one_third' },
+										_react2.default.createElement(
+											'label',
+											null,
+											'Name ',
+											_react2.default.createElement(
+												'small',
+												null,
+												'*'
+											)
+										),
+										_react2.default.createElement('input', { type: 'text', id: 'template-contactform-name', name: 'template-contactform-name', value: '', className: 'sm-form-control required' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col_one_third' },
+										_react2.default.createElement(
+											'label',
+											null,
+											'Email ',
+											_react2.default.createElement(
+												'small',
+												null,
+												'*'
+											)
+										),
+										_react2.default.createElement('input', { type: 'email', id: 'template-contactform-email', name: 'template-contactform-email', value: '', className: 'required email sm-form-control' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col_one_third col_last' },
+										_react2.default.createElement(
+											'label',
+											null,
+											'Phone'
+										),
+										_react2.default.createElement('input', { type: 'text', id: 'template-contactform-phone', name: 'template-contactform-phone', value: '', className: 'sm-form-control' })
+									),
+									_react2.default.createElement('div', { className: 'clear' }),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col_two_third' },
+										_react2.default.createElement(
+											'label',
+											null,
+											'Subject ',
+											_react2.default.createElement(
+												'small',
+												null,
+												'*'
+											)
+										),
+										_react2.default.createElement('input', { type: 'text', id: 'template-contactform-subject', name: 'template-contactform-subject', value: '', className: 'required sm-form-control' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col_one_third col_last' },
+										_react2.default.createElement(
+											'label',
+											null,
+											'Topic'
+										),
+										_react2.default.createElement(
+											'select',
+											{ id: 'template-contactform-service', name: 'template-contactform-service', className: 'sm-form-control' },
+											_react2.default.createElement(
+												'option',
+												{ value: '' },
+												'-- Select One --'
+											),
+											_react2.default.createElement(
+												'option',
+												{ value: 'Wordpress' },
+												'Acting'
+											),
+											_react2.default.createElement(
+												'option',
+												{ value: 'PHP / MySQL' },
+												'Design'
+											),
+											_react2.default.createElement(
+												'option',
+												{ value: 'HTML5 / CSS3' },
+												'Writing'
+											),
+											_react2.default.createElement(
+												'option',
+												{ value: 'Graphic Design' },
+												'Other'
+											)
+										)
+									),
+									_react2.default.createElement('div', { className: 'clear' }),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col_full' },
+										_react2.default.createElement(
+											'label',
+											null,
+											'Message ',
+											_react2.default.createElement(
+												'small',
+												null,
+												'*'
+											)
+										),
+										_react2.default.createElement('textarea', { className: 'required sm-form-control', id: 'template-contactform-message', name: 'template-contactform-message', rows: '6', cols: '30' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col_full hidden' },
+										_react2.default.createElement('input', { type: 'text', id: 'template-contactform-botcheck', name: 'template-contactform-botcheck', value: '', className: 'sm-form-control' })
+									),
+									_react2.default.createElement(
+										'div',
+										{ className: 'col_full' },
+										_react2.default.createElement(
+											'button',
+											{ className: 'button button-3d nomargin', type: 'submit', id: 'template-contactform-submit', name: 'template-contactform-submit', value: 'submit' },
+											'Send Message'
+										)
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_full nobottommargin clearfix' },
+								_react2.default.createElement(
+									'div',
+									{ className: 'col_one_fourth' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'feature-box fbox-center fbox-bg fbox-plain' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'fbox-icon' },
+											_react2.default.createElement(
+												'a',
+												{ href: '#' },
+												_react2.default.createElement('i', { className: 'icon-map-marker2' })
+											)
+										),
+										_react2.default.createElement(
+											'h3',
+											null,
+											'Email Address',
+											_react2.default.createElement(
+												'span',
+												{ className: 'subtitle' },
+												'laurene.yu@gmail.com'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'col_one_fourth' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'feature-box fbox-center fbox-bg fbox-plain' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'fbox-icon' },
+											_react2.default.createElement(
+												'a',
+												{ href: '#' },
+												_react2.default.createElement('i', { className: 'icon-phone3' })
+											)
+										),
+										_react2.default.createElement(
+											'h3',
+											null,
+											'Speak to Me',
+											_react2.default.createElement(
+												'span',
+												{ className: 'subtitle' },
+												'(123) 456 7890'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'col_one_fourth' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'feature-box fbox-center fbox-bg fbox-plain' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'fbox-icon' },
+											_react2.default.createElement(
+												'a',
+												{ href: '#' },
+												_react2.default.createElement('i', { className: 'icon-skype2' })
+											)
+										),
+										_react2.default.createElement(
+											'h3',
+											null,
+											'Make a Video Call',
+											_react2.default.createElement(
+												'span',
+												{ className: 'subtitle' },
+												'LaureneYuOnSkype'
+											)
+										)
+									)
+								),
+								_react2.default.createElement(
+									'div',
+									{ className: 'col_one_fourth col_last' },
+									_react2.default.createElement(
+										'div',
+										{ className: 'feature-box fbox-center fbox-bg fbox-plain' },
+										_react2.default.createElement(
+											'div',
+											{ className: 'fbox-icon' },
+											_react2.default.createElement(
+												'a',
+												{ href: '#' },
+												_react2.default.createElement('i', { className: 'icon-twitter2' })
+											)
+										),
+										_react2.default.createElement(
+											'h3',
+											null,
+											'Follow on twitter',
+											_react2.default.createElement(
+												'span',
+												{ className: 'subtitle' },
+												'1M Followers'
+											)
+										)
+									)
+								)
+							)
+						),
+						_react2.default.createElement(
+							'div',
+							{ className: 'postcontent nobottommargin clearfix' },
+							_react2.default.createElement(
+								'div',
+								{ className: 'col_two_fifth bothsidebar nobottommargin' },
+								_react2.default.createElement(
+									'button',
+									{ onClick: this.logout.bind(this) },
+									'logout'
+								)
 							)
 						)
 					)
-				),
-				_react2.default.createElement("div", { className: "clear" })
+				)
 			);
 		}
 	}]);
@@ -9322,7 +10308,27 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //               <div id="primary-menu-trigger"><i className="icon-reorder"></i></div>
+
+
+// <nav id="primary-menu" >
+
+// 	<ul className="one-page-menu" data-easing="easeInOutExpo" data-speed="1500" style={{border:'none'}}>
+// 		<li><a href="#" data-href="#home"><div>Home</div></a></li>
+// 		<li><a href="#" data-href="#section-about"><div>About</div></a></li>
+// 		<li><a href="#" data-href="#section-design"><div>Design</div></a></li>
+// 		<li><a href="#" data-href="#section-acting"><div>Acting</div></a></li>
+// 		<li><a href="#" data-href="#section-writing"><div>Writing</div></a></li>
+
+
+// 		<li><a href="#" data-href="#section-testimonials" data-offset="60"><div>Testimonials</div></a></li>
+// 		<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
+
+// 	</ul>
+
+
+// </nav>
+
 
 var Public = function (_Component) {
 	_inherits(Public, _Component);
@@ -9345,114 +10351,7 @@ var Public = function (_Component) {
 					_react2.default.createElement(
 						"div",
 						{ id: "header-wrap" },
-						_react2.default.createElement(
-							"div",
-							{ className: "container clearfix" },
-							_react2.default.createElement(
-								"div",
-								{ id: "primary-menu-trigger" },
-								_react2.default.createElement("i", { className: "icon-reorder" })
-							),
-							_react2.default.createElement(
-								"nav",
-								{ id: "primary-menu" },
-								_react2.default.createElement(
-									"ul",
-									{ className: "one-page-menu", "data-easing": "easeInOutExpo", "data-speed": "1500", style: { border: 'none' } },
-									_react2.default.createElement(
-										"li",
-										null,
-										_react2.default.createElement(
-											"a",
-											{ href: "#", "data-href": "#home" },
-											_react2.default.createElement(
-												"div",
-												null,
-												"Home"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										null,
-										_react2.default.createElement(
-											"a",
-											{ href: "#", "data-href": "#section-about" },
-											_react2.default.createElement(
-												"div",
-												null,
-												"About"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										null,
-										_react2.default.createElement(
-											"a",
-											{ href: "#", "data-href": "#section-design" },
-											_react2.default.createElement(
-												"div",
-												null,
-												"Design"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										null,
-										_react2.default.createElement(
-											"a",
-											{ href: "#", "data-href": "#section-acting" },
-											_react2.default.createElement(
-												"div",
-												null,
-												"Acting"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										null,
-										_react2.default.createElement(
-											"a",
-											{ href: "#", "data-href": "#section-writing" },
-											_react2.default.createElement(
-												"div",
-												null,
-												"Writing"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										null,
-										_react2.default.createElement(
-											"a",
-											{ href: "#", "data-href": "#section-testimonials", "data-offset": "60" },
-											_react2.default.createElement(
-												"div",
-												null,
-												"Testimonials"
-											)
-										)
-									),
-									_react2.default.createElement(
-										"li",
-										null,
-										_react2.default.createElement(
-											"a",
-											{ href: "#", "data-href": "#section-contact" },
-											_react2.default.createElement(
-												"div",
-												null,
-												"Contact"
-											)
-										)
-									)
-								)
-							)
-						)
+						_react2.default.createElement("div", { className: "container clearfix" })
 					)
 				),
 				_react2.default.createElement(
