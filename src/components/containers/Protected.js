@@ -11,7 +11,7 @@ class Protected extends Component {
             	alert(msg)
             	return
             }
-            console.log(this.props.currentUser.email)
+            // console.log(this.props.currentUser.email)
             window.location.href = '/'
 		})
 

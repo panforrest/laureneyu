@@ -9192,8 +9192,6 @@ var Protected = function (_Component) {
 	_createClass(Protected, [{
 		key: 'logout',
 		value: function logout(event) {
-			var _this2 = this;
-
 			//logout(){
 			// console.log('logout: ')
 			_utils.APIManager.get('/account/logout', null, function (err, response) {
@@ -9202,7 +9200,7 @@ var Protected = function (_Component) {
 					alert(msg);
 					return;
 				}
-				console.log(_this2.props.currentUser.email);
+				// console.log(this.props.currentUser.email)
 				window.location.href = '/';
 			});
 		}
