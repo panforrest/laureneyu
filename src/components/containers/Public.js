@@ -17,7 +17,7 @@ class Public extends Component {
 						
 						<nav id="primary-menu" >
 
-							<ul className="one-page-menu" data-easing="easeInOutExpo" data-speed="1500">
+							<ul className="one-page-menu" data-easing="easeInOutExpo" data-speed="1500" style={{border:'none'}}>
 								<li><a href="#" data-href="#home"><div>Home</div></a></li>
 								<li><a href="#" data-href="#section-about"><div>About</div></a></li>
 								<li><a href="#" data-href="#section-design"><div>Design</div></a></li>
